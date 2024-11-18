@@ -3,7 +3,7 @@ Import-Module -Name Terminal-Icons -Force
 Set-PSReadLineOption -PredictionViewStyle ListView
 clear
 function devssh {
-	Invoke-Expression "ssh root@11.151.28.85 -p 21098 -o PasswordAuthentication=yes"
+	Invoke-Expression "ssh root@11.151.28.285 -p 21098 -o PasswordAuthentication=yes"
 }
 function Open-Program {
 	param (
@@ -21,4 +21,19 @@ function Open-Program {
 }
 function tg {
 	Open-Program "C:\Users\root\AppData\Roaming\Telegram Desktop\Telegram.exe" "/n"
+}
+function fz {
+	Open-Program "C:\Program Files\FileZilla FTP Client\filezilla.exe" "/n"
+}
+function fg {
+	Open-Program "C:\Users\mensc\AppData\Local\Figma\Figma.exe" "/n"
+}
+function chrome {
+	Open-Program "C:\Program Files\Google\Chrome\Application\chrome.exe" "/n"
+}
+function vs {
+	Open-Program "C:\Users\mensc\AppData\Local\Programs\Microsoft VS Code\Code.exe" "/n"
+}
+function figma {
+	Open-Program "C:\Users\mensc\AppData\Local\Figma\app-124.5.5\Figma.exe" "/n"
 }
