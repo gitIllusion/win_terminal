@@ -3,7 +3,7 @@ Import-Module -Name Terminal-Icons -Force
 Set-PSReadLineOption -PredictionViewStyle ListView
 clear
 function devssh {
-	Invoke-Expression "ssh root@11.151.28.285 -p 21098 -o PasswordAuthentication=yes"
+	Invoke-Expression "ssh root@11.151.128.285 -p 21098 -o PasswordAuthentication=yes"
 }
 function Open-Program {
 	param (
